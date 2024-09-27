@@ -1,0 +1,33 @@
+spring:
+
+  liquibase:
+    enabled: true
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+
+
+# GitHub Login
+  security:
+      oauth2:
+        client:
+          registration:
+            github:
+              client-id: Ov23liK2IkdhsyMis8AE
+              client-secret: 37fafecce1db297f52ed8b35a155bcbeb0f2cc45
+  #spring.security.oauth2.client.registration.github.scope=email, public_profile
+
+  logging:
+    level.org.springframework.security=TRACE
+
