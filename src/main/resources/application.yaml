@@ -2,6 +2,8 @@ spring:
 
   liquibase:
     enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
 
   datasource:
     driver-class-name: org.postgresql.Driver
@@ -24,8 +26,8 @@ spring:
         client:
           registration:
             github:
-              client-id: Ov23liK2IkdhsyMis8AE
-              client-secret: 37fafecce1db297f52ed8b35a155bcbeb0f2cc45
+              client-id: ${GITHUB_CLIENT_ID}
+              client-secret: ${GITHUB_CLIENT_SECRET}
   #spring.security.oauth2.client.registration.github.scope=email, public_profile
 
   logging:
