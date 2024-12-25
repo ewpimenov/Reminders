@@ -10,7 +10,8 @@ CREATE TABLE reminder
 CREATE TABLE users(
     id          BIGINT PRIMARY KEY,
     username    VARCHAR (50),
-    password    VARCHAR (250)
+    password    VARCHAR (250),
+    email       VARCHAR (250)
 );
 
 INSERT INTO reminder (id, title, description, remind, user_id)
@@ -19,5 +20,6 @@ VALUES  ('1', 'Земля', 'Круглая', '2024-10-18 16:04:04.000000', '1')
         ('3', 'Марс', 'Красный', '2024-10-20 16:06:06.00000', '3' ),
         ('4', 'Сатурн', 'С кольцами', '2024-10-21 16:07:07.00000', '4' );
 
-INSERT INTO users (id, username, password)
-VALUES ('1', '1', '$2y$10$3MCoDR3xbZLJ16Z2KbqUUuCnU7d/rGG4WVZckVNCTAqckOZgTstW.');
+INSERT INTO users (id, username, password, email)
+VALUES ('1', 'Evgeny', '$2y$10$3MCoDR3xbZLJ16Z2KbqUUuCnU7d/rGG4WVZckVNCTAqckOZgTstW.', 'evgpimenov444@gmail.com');
+VALUES ('2', 'Vasily', '$2a$12$wJ7.BH9w.qt9xesrqPuL3Oc.Qo52B.ZDHKaB.hulCeqFbs2Bk7MRi', 'evgpimenov444@gmail.com')
