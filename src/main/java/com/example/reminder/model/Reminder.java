@@ -25,5 +25,5 @@ public class Reminder {
     private Date remind;
 
     @Column(name = "user_id")
-    private Integer userId;
+    private Long userId;
 }

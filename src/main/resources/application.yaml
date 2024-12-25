@@ -3,6 +3,18 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.xml
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: ${MAIL_USERNAME}
+    password: ${MAIL_PASSWORD}
+    properties:
+      mail:
+        smth:
+          auth: true
+        smtp:
+          starttls:
+            enable: true
 
 
   datasource:
@@ -33,3 +45,8 @@ spring:
   logging:
     level.org.springframework.security=TRACE
 
+  #TelegrammBot
+bot:
+  name: ${BOT_NAME}
+  token: ${BOT_TOKEN}
+  chatId: ${BOT_CHAT_ID}
