@@ -17,7 +17,6 @@ public class ReminderServiceImpl implements ReminderService {
 
     ReminderRepository reminderRepository;
 
-
     public ReminderServiceImpl(ReminderRepository reminderRepository) {
         this.reminderRepository = reminderRepository;
     }
@@ -47,8 +46,8 @@ public class ReminderServiceImpl implements ReminderService {
     }
 
     @Override
-    public void updateReminder(Integer id, Reminder reminder) {
-        reminderRepository.saveAndFlush(reminder);
+    public Reminder updateReminder(Integer id, Reminder reminder) {
+      return reminderRepository.saveAndFlush(reminder);
     }
 
     @Override

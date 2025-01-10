@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-
 @RestController
 @CrossOrigin
 @RequestMapping("/api/v1")
@@ -55,7 +54,7 @@ public class ReminderController {
     @PutMapping(value = "{id}")
     public ResponseEntity<ReminderDTO> updateReminder(@PathVariable Integer id, @RequestBody ReminderDTO reminderDTO) {
         reminderService.updateReminder(id, reminderMapper.reminderDtoToReminder(reminderDTO));
-        return new ResponseEntity<>(HttpStatus.OK);
+        return ResponseEntity.status(HttpStatus.OK).body(reminderDTO);
     }
 
     @DeleteMapping(value = "/reminder/delete/{id}")

@@ -12,10 +12,9 @@ public interface ReminderService {
 
     List<Reminder> getReminders();
 
-    void updateReminder(Integer id, Reminder reminder);
+    Reminder updateReminder(Integer id, Reminder reminder);
 
     void deleteReminder(Integer id);
 
     Page<Reminder> getReminderPagination(Integer total, Integer current, String sort);
-
 }
