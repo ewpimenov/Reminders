@@ -38,6 +38,6 @@ public class SecurityConfig {
 
     @Bean
     public CsrfTokenRepository csrfTokenRepository() {
-       return new HttpSessionCsrfTokenRepository();
+        return new HttpSessionCsrfTokenRepository();
     }
 }

@@ -42,3 +42,5 @@ bot:
   name: ${BOT_NAME}
   token: ${BOT_TOKEN}
   chatId: ${BOT_CHAT_ID}
+
+#-integration test

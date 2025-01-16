@@ -8,3 +8,5 @@
         <sqlFile path="sql/create-reminder-user-table.sql" relativeToChangelogFile="true"/>
     </changeSet>
 </databaseChangeLog>
+
+<!--        integration test-->
