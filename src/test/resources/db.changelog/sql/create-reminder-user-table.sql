@@ -23,3 +23,5 @@ VALUES  ('1', 'Земля', 'Круглая', '2024-10-18 16:04:04.000000', '1')
 INSERT INTO users (id, username, password, email)
 VALUES ('1', 'Evgeny', '$2y$10$3MCoDR3xbZLJ16Z2KbqUUuCnU7d/rGG4WVZckVNCTAqckOZgTstW.', 'evgpimenov444@gmail.com');
 VALUES ('2', 'Vasily', '$2a$12$wJ7.BH9w.qt9xesrqPuL3Oc.Qo52B.ZDHKaB.hulCeqFbs2Bk7MRi', 'evgpimenov444@gmail.com')
+
+-- integration test
